@@ -1,4 +1,4 @@
-import styles from "./styles.module.css"
+import styles from './styles.module.css'
 
 type Props = React.ComponentProps<'button'> & {
   name: string
@@ -6,10 +6,8 @@ type Props = React.ComponentProps<'button'> & {
 
 export function Button({ name, onClick }: Props) {
   return (
-  <button className={styles.container} onClick={onClick}>
-    <span>
-      {name}
-    </span> 
+    <button className={styles.container} onClick={onClick}>
+      <span>{name}</span>
     </button>
-    )
+  )
 }
